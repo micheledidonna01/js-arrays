@@ -55,12 +55,12 @@ for(i=0; i<teachers.length; i++){
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 
-const isTeachersEmpty = teachers.length;
+const isTeachersEmpty = teachers.length > 0;
 
-  if(isTeachersEmpty > 0){
-    console.log('L\'array è pieno');
+  if(isTeachersEmpty){
+    console.log('L\'array è pieno', isTeachersEmpty);
   }else{
-    console.log('L\'array è vuoto');
+    console.log('L\'array è vuoto', isTeachersEmpty);
   }
 
-console.log(`Esercizio 8: l'array contiene: ${isTeachersEmpty} elementi`);
+console.log(`Esercizio 8: l'array contiene: ${teachers.length} elementi`);
