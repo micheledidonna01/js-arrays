@@ -10,7 +10,7 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = teachers[4];
+const fourthTeacher = teachers[3];
 console.log('Esercizio 1: ',fourthTeacher);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
@@ -21,6 +21,7 @@ for (i = 0; i < teachers.length; i++) {
     console.log('Esercizio 2: ', teachers[i]);
   }
 }
+//teachers[4] = 'Patrick';
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop();
@@ -45,22 +46,25 @@ console.log('Esercizio 6: ', teachers);
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 
-for(i=0; i<teachers.length; i++){
+for(let i=0; i<teachers.length; i++){
   if(teachers[i] === 'Lewis'){
     const lewisIndex = i;
     console.log('Esercizio 7: L\'indice è', lewisIndex);
+    break;
   }
 }
+//const lewisIndex = teachers.indexOf('Lewis');
+
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 
-const isTeachersEmpty = teachers.length > 0;
+const isTeachersEmpty = teachers.length === 0;
 
   if(isTeachersEmpty){
-    console.log('L\'array è pieno', isTeachersEmpty);
-  }else{
     console.log('L\'array è vuoto', isTeachersEmpty);
+  }else{
+    console.log('L\'array è pieno', isTeachersEmpty);
   }
 
 console.log(`Esercizio 8: l'array contiene: ${teachers.length} elementi`);
